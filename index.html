@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf App</title>
+
+    <!-- Impor script kamu di sini -->
+    <!-- Lampirkan `defer` jika pemanggilan dilakukan dalam <head> -->
+    <script defer src="assets/script/main.js"></script>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    <header class="app-header">
+        <h1>Bookshelf Apps</h1>
+        
+        <form id="searchBook" class="search-form" data-testid="searchBookForm">
+            <div class="search-box">
+                <input id="searchBookTitle" type="text" placeholder="Cari judul buku..." data-testid="searchBookFormTitleInput">
+                <button id="searchSubmit" type="submit" data-testid="searchBookFormSubmitButton">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </form>
+
+        <button id="btnShowModal" class="btn-add-book">
+            <i class="fas fa-plus"></i> Tambah Buku
+        </button>
+    </header>
+
+    <main>
+        <div id="bookModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modalTitle">Tambah Buku Baru</h2>
+                    <span class="close-modal">&times;</span>
+                </div>
+                
+                <form id="bookForm" data-testid="bookForm">
+                    <div class="form-group">
+                        <label for="bookFormTitle">Judul</label>
+                        <input id="bookFormTitle" type="text" required data-testid="bookFormTitleInput" placeholder="Contoh: Harry Potter" />
+                    </div>
+                    <div class="form-group">
+                        <label for="bookFormAuthor">Penulis</label>
+                        <input id="bookFormAuthor" type="text" required data-testid="bookFormAuthorInput" placeholder="Contoh: J.K. Rowling" />
+                    </div>
+                    <div class="form-group">
+                        <label for="bookFormYear">Tahun</label>
+                        <input id="bookFormYear" type="number" required data-testid="bookFormYearInput" placeholder="Contoh: 2001" />
+                    </div>
+                    <div class="form-check">
+                        <label for="bookFormIsComplete">Selesai dibaca</label>
+                        <input id="bookFormIsComplete" type="checkbox" data-testid="bookFormIsCompleteCheckbox" />
+                    </div>
+                    
+                    <button id="bookFormSubmit" type="submit" class="btn-submit" data-testid="bookFormSubmitButton">
+                        Simpan Buku
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <section class="shelf-section">
+            <h2 class="section-title">Belum Selesai Dibaca <i class="far fa-bookmark"></i></h2>
+            <div id="incompleteBookList" class="book-grid" data-testid="incompleteBookList">
+                </div>
+        </section>
+
+        <section class="shelf-section">
+            <h2 class="section-title">Selesai Dibaca <i class="fas fa-check-circle"></i></h2>
+            <div id="completeBookList" class="book-grid" data-testid="completeBookList">
+                </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Bookshelf Apps - Submission Project by Muhamad Afriza</p>
+    </footer>
+</body>
+</html>
