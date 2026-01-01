@@ -4,18 +4,25 @@ Selamat datang di repository proyek submission saya untuk kelas **"Belajar Membu
 
 ---
 
-## Fitur & Teknologi
+![Preview Aplikasi](assets/media/preview.gif)
 
-Proyek ini dibangun untuk memenuhi kriteria submission dengan fungsionalitas interaktif dan persisten.
+---
 
-### Fitur Utama
-* **Menambahkan Buku Baru:** Pengguna dapat memasukkan judul, penulis, dan tahun terbit buku ke dalam rak "Belum Selesai Dibaca" atau "Selesai Dibaca".
-* **Memindahkan Buku:** Fitur untuk memindahkan buku antar rak (dari *Belum Selesai* ke *Selesai*, dan sebaliknya).
-* **Menghapus Buku:** Menghapus buku dari daftar sepenuhnya, dengan konfirmasi dialog.
-* **Penyimpanan Data Permanen:** Menggunakan **LocalStorage** (Web Storage) sehingga data buku tidak hilang meskipun browser di-refresh atau ditutup.
-* **Pencarian Buku:** Fitur untuk memfilter/mencari buku berdasarkan judul.
+## Fitur & Demo Aplikasi
 
-### Teknologi yang Digunakan
+Berikut adalah fitur-fitur utama yang tersedia dalam aplikasi ini:
+
+| Fitur | Deskripsi & Demo |
+| :--- | :--- |
+| **1. Menambahkan Buku** | Pengguna dapat memasukkan judul, penulis, dan tahun terbit buku ke dalam rak "Belum Selesai Dibaca" atau "Selesai Dibaca".<br><br>![Demo Tambah Buku](assets/media/add.gif) |
+| **2. Pencarian Buku** | Fitur pencarian *real-time* untuk memfilter buku berdasarkan judul, memudahkan pengguna menemukan buku dalam daftar.<br><br>![Demo Cari Buku](assets/media/search.gif) |
+| **3. Memindahkan Rak** | Memindahkan buku antar rak dengan mudah (dari *Belum Selesai* ke *Selesai*, dan sebaliknya).<br><br>![Demo Pindah Rak](assets/media/move.gif) |
+| **4. Mengedit Buku** | **(Fitur Tambahan)** Memperbarui detail buku (Judul, Penulis, Tahun) jika terjadi kesalahan input, tanpa perlu menghapus buku.<br><br>![Demo Edit Buku](assets/media/edit.gif) |
+| **5. Menghapus Buku** | Menghapus buku dari daftar sepenuhnya dengan konfirmasi dialog untuk mencegah penghapusan yang tidak disengaja.<br><br>![Demo Hapus Buku](assets/media/delete.gif) |
+
+---
+
+## Teknologi yang Digunakan
 * **HTML5:** Membangun struktur semantik halaman web.
 * **CSS3:** Styling antarmuka agar rapi dan responsif.
 * **JavaScript (ES6):**
